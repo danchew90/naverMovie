@@ -1,0 +1,96 @@
+.reviewExpected > .center {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.review {
+  /* background-color: pink; */
+  width: 60%;
+}
+
+.reviewWrap {
+  /* background-color: turquoise; */
+  position: relative;
+  margin-top: 10px;
+}
+.reviewImg > img {
+  width: 8%;
+  height: 8%;
+  float: left;
+  margin-right: 10px;
+}
+
+.reviewTextBox {
+  /* float: left; */
+  /* background-color: tomato; */
+  width: 91%;
+  margin-bottom: 30px;
+}
+.starRank {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.starRankImg > li {
+  float: left;
+}
+
+.reviewTextBox > .reviewTitle {
+  color: var(--green);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.rank1 > .reviewSection > .reviewImg,
+.rank1 > .reviewSection > .reviewTextBox > .reviewSubWrap {
+  display: block;
+}
+.reviewImg,
+.reviewSubWrap {
+  display: none;
+}
+
+.rankModule {
+  margin-bottom: 15px;
+  /* background-color: violet; */
+  position: relative;
+}
+
+.rankModule > .starRank {
+  display: block;
+}
+
+.expected {
+  width: 38%;
+  margin-top: 30px;
+  /* background-color: blue; */
+}
+.expected > h3 {
+  margin-top: 0;
+}
+.expectedImg {
+  width: 100%;
+}
+.expectedImg > a > img {
+  width: 90%;
+  transition: 0.4s;
+}
+.expectedImg > a:hover > img {
+  opacity: 0.3;
+}
+
+.reviewSubWrap > li {
+  margin-top: 10px;
+}
+
+.starRankImg > li:last-child > span {
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 5px;
+}

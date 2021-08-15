@@ -1,0 +1,167 @@
+.mainBanner {
+  width: 1920px;
+  position: relative;
+  margin-top: -30px;
+  overflow: hidden;
+}
+
+.banner {
+  width: 400%;
+}
+.banner > li {
+  width: 25%;
+  float: left;
+}
+.mainBannerImg {
+  width: 100%;
+  height: 100%;
+}
+.mainBannerImg > img {
+  width: 100%;
+}
+
+.textBox {
+  /* background-color: rgba(255, 0, 255, 0.4); */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.mainTitle {
+  font-size: 120px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  margin: 200px 0 0 90px;
+}
+
+.mainTitle > span {
+  font-size: 50px;
+}
+
+.textBoxTitle {
+  margin: 430px 0 30px 90px;
+}
+.textBoxTitle > li {
+  float: left;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.textBoxTitle > li:first-child {
+  width: 50px;
+  height: 50px;
+  background-color: var(--red);
+  border-radius: 15px;
+  line-height: 1.2;
+  padding-top: 5px;
+  text-align: center;
+}
+.textBoxTitle > li:last-child {
+  padding-top: 20px;
+}
+
+.text_info {
+  margin: 500px 0 0 90px;
+  width: 580px;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.infoBtn {
+  padding: 40px 0 0 90px;
+}
+
+.infoBtn > li {
+  float: left;
+  margin-right: 10px;
+}
+
+.infoBtn > li a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.infoBtn > li:first-child > a {
+  background-color: var(--white);
+  color: var(--black);
+}
+.infoBtn > li:last-child > a {
+  background-color: var(--gray);
+  position: relative;
+  padding-left: 10px;
+}
+
+.infoBtn > li:first-child > a:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.infoBtn > li:last-child > a:hover {
+  background-color: var(--red);
+  color: var(--black);
+  padding-left: 10px;
+}
+
+.infoBtn > li:last-child > a::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: url(../../images/iconmonstr-info.png) no-repeat;
+  position: absolute;
+  left: 15px;
+  top: calc(50% - 10px);
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.infoBtn > li:last-child > a:hover::before {
+  background: url(../../images/iconmonstr-info_hover.png) no-repeat;
+}
+
+.btn > li {
+  position: absolute;
+  top: 500px;
+}
+
+.btn > .leftBtn {
+  /*    float: left;*/
+  left: 0;
+  transition: 0.3s;
+}
+.btn > .rightBtn {
+  /*    float: right;*/
+  right: 0;
+  transition: 0.3s;
+}
+
+.btn > li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.leftBtn > a {
+  background: url(../../images/arrow-left.png);
+}
+.leftBtn > a:hover {
+  background: url(../../images/arrow-left-hover.png);
+}
+
+.rightBtn > a {
+  background: url(../../images/arrow-right.png);
+}
+
+.rightBtn > a:hover {
+  background: url(../../images/arrow-right-hover.png);
+}

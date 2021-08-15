@@ -1,0 +1,132 @@
+.rank {
+  margin-bottom: 90px;
+}
+
+.rank > .center {
+  margin: 0 auto;
+  position: relative;
+  /* background: royalblue; */
+  clear: both;
+}
+
+.rankBox {
+  position: relative;
+}
+.rankWrap {
+  /* background: sienna; */
+  width: 100%;
+  /* margin: 20px auto; */
+}
+
+.rankWrap > li {
+  width: 15%;
+  float: left;
+  /* background-color: brown; */
+  margin-right: 20px;
+  position: relative;
+}
+
+.rankMain {
+  float: right;
+  z-index: 50;
+  background: var(--black);
+  position: relative;
+}
+.rankWrap > li > .rankMain > a > img {
+  width: 150px;
+
+  right: 0;
+  top: 0;
+}
+
+.quickBox {
+  display: block;
+  width: 150px;
+  height: 220px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0px;
+  right: 0;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.rankWrap > li:hover .quickBox {
+  opacity: 1;
+}
+.quickBox > ul > li {
+  float: left;
+  margin: 185px 0 10px 5px;
+  margin-right: 5px;
+}
+.quickBox li > a {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+.quickBox li:first-child > a {
+  background: url(../../images/iconmonstr-plus.png) no-repeat;
+}
+.quickBox li:first-child:hover > a {
+  background-position: -25px 0;
+}
+
+.quickBox li:nth-child(2) > a {
+  background: url(../../images/iconmonstr-thumb.png) no-repeat;
+}
+.quickBox li:nth-child(2):hover > a {
+  background-position: -25px 0;
+}
+.quickBox li:last-child > a {
+  background: url(../../images/iconmonstr-thumb-unlike.png) no-repeat;
+}
+.quickBox li:last-child:hover > a {
+  background-position: -25px 0;
+}
+
+.rankNum {
+  font-size: 310px;
+  font-weight: bolder;
+  position: absolute;
+  /* background: skyblue; */
+  top: -105px;
+  left: -15px;
+  z-index: -1;
+  color: var(--black);
+  -webkit-text-stroke: 5px var(--gray);
+}
+.rankInfo {
+  background-color: var(--black);
+}
+.rankInfo span:first-child {
+  font-weight: 800;
+  font-size: 18px;
+}
+.rankInfo span:last-child {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--red);
+}
+
+.rankInfo span:last-child {
+  float: right;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+}
+
+.arrow > a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../../images/iconmonstr-arrow.png) no-repeat;
+  color: white;
+  text-indent: -9999px;
+}
+
+.arrow > a:hover {
+  background-position: -50px 0;
+}

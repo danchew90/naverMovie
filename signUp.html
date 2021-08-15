@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAVER-MOVIE</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="images/mma_204243574.png" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <div class="center">
+      <h1 class="logo">
+        <a href="#"><img src="images/logo_ci.png" alt="네이버로고" /><span>movie</span></a>
+      </h1>
+      <nav>
+        <ul class="headNav">
+          <li><a href="index.html" class="active">홈</a></li>
+          <li><a href="now.html">상영작 &middot;예정작</a></li>
+          <li><a href="#">지금뜨는 상영작</a></li>
+          <li><a href="#">랭킹</a></li>
+          <li><a href="#">예매</a></li>
+          <li><a href="#">평점 &middot;리뷰</a></li>
+          <li><a href="#">다운로드</a></li>
+        </ul>
+      </nav>
+      <ul class="gnb">
+        <li><a href="#">bell</a></li>
+        <li><a href="#logBox">user</a></li>
+      </ul>
+      <div class="searchWrap">
+        <a href="#">
+          <input id="search" type="text" value="" />
+        </a>
+      </div>
+    </div>
+    <div class="log" id="logBox">
+      <div class="logTop">
+        <span>sign in</span>
+        <span>sign up</span>
+      </div>
+      <div class="midLog">
+        <img src="images/logo_ci.png" alt="네이버로고" /><span>movie</span>
+      </div>
+      <form class="logForm">
+        <div class="id"></div>
+        <input type="text" placeholder="아이디 입력" />
+        <div class="password"></div>
+        <input type="text" placeholder="비밀번호 입력" />
+      </form>
+
+      <div class="check">
+        <img src="images/iconmonstr-check.png" alt="" />
+        <span>로그인 상태 유지</span>
+      </div>
+      <button class="logBtn">로그인</button>
+      <ul class="logWrap">
+        <li><a href="#">아이디 찾기 </a></li>
+        <li><a href="#">비밀번호 찾기 </a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="mainBanner">
+    <h2 class="blind">mainBanner</h2>
+    <a href="#" class="mainBannerImg"><img src="images/nomadland.jpeg" alt="메인배너 이미지" /></a>
+    <div class="textBox clearFix">
+      <h2 class="mainTitle">노매드랜드</h2>
+      <div class="textBox">
+        <ul class="textBoxTitle">
+          <li>
+            Top <br />
+            10
+          </li>
+          <li>오늘 대한민국에서 예매순위 9위</li>
+        </ul>
+        <p class="text_info">
+          전 세계가 동행한 가슴 벅찬 여정, 길이 계속되는 한 우리의 삶도
+          계속된다. 모든 것이 무너진 후에야 비로소 열리는 새로운 길 그리고
+          희망 경제적 붕괴로 도시 전체가 무너진 후 홀로 남겨진 ‘펀’.(프란시스
+          맥도맨드) 추억이 깃든 도시를 떠나 작은 밴과 함께 한 번도 가보지 않은
+          낯선 길 위의 세상으로 떠난다. 그 곳에서 ‘펀’은 각자의 사연을 가진
+          노매드들을 만나게 되고, 광활한 자연과 길 위에서의 삶을 스스로 선택한
+          그들과 만나고 헤어지며 다시 살아가기 위한 여정을 시작하는데…
+        </p>
+        <ul class="infoBtn">
+          <li><a href="#">예매</a></li>
+          <li><a href="#">상세정보</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="signUp">
+    <h2 class="blind">signUp</h2>
+    <div class="center">
+      <div class="signUpHead">
+        <span>sign up</span>
+        <div class="required">
+          <span class="checkedBox">표시는 반드시 입력해야 하는 항목입니다.</span>
+        </div>
+      </div>
+      <div class="signUpForm">
+        <div class="line1 line">
+          <span class="checkedBox">아이디</span>
+          <button>중복확인</button>
+          <input type="text" />
+        </div>
+        <div class="line2 line">
+          <span class="checkedBox">비밀번호</span>
+          <input type="password" />
+        </div>
+        <div class="line3 line">
+          <span class="checkedBox">비밀번호 확인</span>
+          <input type="password" />
+        </div>
+        <div class="line4 line">
+          <span class="checkedBox">이름</span>
+          <input type="text" />
+        </div>
+        <div class="line5 line">
+          <span>생년월일</span>
+          <div class="dateBox">
+            <input type="text" placeholder="년(4글자)" />
+            <input type="number" name="월" min="1" max="12" placeholder="월" />
+            <input type="text" placeholder="일" />
+          </div>
+        </div>
+        <div class="line6 line">
+          <span>본인확인 이메일</span>
+          <input type="email" name="" id="" />
+        </div>
+        <div class="line7 line">
+          <span>주소</span>
+          <div class="addressBox clearFix">
+            <div class="addressTop">
+              <input type="text" />
+              <button>우편번호 검색</button>
+            </div>
+            <input type="text" />
+            <input type="text" />
+          </div>
+        </div>
+        <div class="line8 line">
+          <span class="checkedBox">휴대전화</span>
+          <input type="text" /><input type="text" /><input type="text" />
+        </div>
+        <div class="lastBtn">
+          <button>이전</button>
+          <button>가입완료</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="center">
+      <div class="footerTop">
+        <ul class="footerWrap">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">책임의 한계와 법적고지</a></li>
+          <li><a href="#">영화 고객센터</a></li>
+        </ul>
+      </div>
+      <div class="footerBottom">
+        <img src="images/logo_ci_gray.png" alt="하단로고" />
+        <div class="footerTextBox">
+          <p>
+            본 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단
+            이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.
+          </p>
+          <p>
+            사업자등록번호 : 220-81-62517통신판매업 신고번호 : 경기성남 제
+            2006 - 692호대표이사 : 한성숙사업자등록정보 확인 주소 : 경기도
+            성남시 분당구 불정로 6 네이버 그린팩토리 대표전화 : 1588-3820
+          </p>
+        </div>
+      </div>
+      <small>Copyright © NAVER Corp. All Rights Reserved.</small>
+    </div>
+  </footer>
+</body>
+
+</html>

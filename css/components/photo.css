@@ -1,0 +1,112 @@
+.photo > .center {
+  width: 90%;
+  margin: 90px auto;
+}
+
+.photoHeader {
+  position: relative;
+}
+
+.pMoreBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 40px;
+}
+.pMoreBtn > span {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.pMoreBtn::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url(../../images/iconmonstr-arrow.png) no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-size: 60px;
+}
+
+.pMoreBtn:hover span {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.pMoreBtn:hover::after {
+  background-position: -30px 0;
+}
+
+.photoWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photoWrap > li {
+  width: 346px;
+  height: 400px;
+  position: relative;
+}
+
+.photoWrap > li > a {
+  display: block;
+  width: 346px;
+  height: 346px;
+  overflow: hidden;
+  position: relative;
+}
+
+.photoWrap > li > a > img {
+  position: absolute;
+  max-height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.photoSubWrp {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.photoSubWrap {
+  padding-top: 10px;
+}
+
+.photoSubTitle {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.hoverPhoto {
+  width: 100%;
+  height: 346px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.photoWrap > li:hover .hoverPhoto {
+  opacity: 1;
+}
+
+.plus {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../../images/iconmonstr-plus1.png) no-repeat;
+  margin: 50%;
+  transform: translate(-50%);
+}
+
+.plus:hover {
+  background: url(../../images/iconmonstr-plus2.png) no-repeat;
+}

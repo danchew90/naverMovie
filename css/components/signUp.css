@@ -1,0 +1,151 @@
+.signUp {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 5%;
+  left: -100%;
+  height: 100%;
+  z-index: 100;
+  transition: 0.6s;
+  /* margin-top: 5%; */
+}
+.signUp:target {
+  left: 0;
+}
+
+.signUpForm {
+  width: 40%;
+  margin: 0 auto;
+  /* background: tan; */
+}
+
+.signUpHead {
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  padding-bottom: 50px;
+}
+
+.line {
+  padding: 10px 0;
+  /* background: salmon; */
+  margin-bottom: 10px;
+}
+
+.line > span {
+  float: le;
+}
+.line > input {
+  float: right;
+}
+.dateBox {
+  float: right;
+}
+.addressBox {
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+.addressBox > input {
+  margin-top: 10px;
+}
+.line > button {
+  float: right;
+}
+.signUpHead > span {
+  font-size: 50px;
+  font-weight: 700;
+}
+.li .checkedBox {
+  position: relative;
+}
+
+.line > span {
+  color: var(--green);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.line {
+  line-height: 40px;
+  padding-right: 50px;
+}
+
+input {
+  height: 40px;
+  border: none;
+}
+
+.line7 {
+  margin-bottom: 100px;
+}
+
+.line button {
+  height: 40px;
+  background: var(--green);
+  color: white;
+  border: none;
+}
+.line1 > input {
+  width: 350px;
+}
+.line2 > input,
+.line3 > input,
+.line4 > input,
+.line6 > input {
+  width: 408px;
+}
+.dateBox > input {
+  width: 127px;
+  margin-left: 5px;
+}
+
+.line8 > input {
+  width: 127px;
+  margin-left: 10px;
+}
+.addressBox > .addressTop > input {
+  width: 320px;
+}
+
+.checkedBox {
+  position: relative;
+}
+
+.checkedBox::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: url(../../images/iconmonstr-check.png) no-repeat;
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lastBtn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.lastBtn > button {
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  background: var(--white);
+  border: none;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.lastBtn > button:first-child:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+.lastBtn > button:last-child:hover {
+  background: var(--green);
+  color: var(--white);
+}

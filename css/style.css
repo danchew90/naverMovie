@@ -1,0 +1,30 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+/* common */
+@import "common.css";
+
+/* root */
+@import "root.css";
+
+/* style */
+/* header */
+@import "components/header.css";
+/* mainBanner */
+@import "components/mainBanner.css";
+/* rank */
+@import "components/rank.css";
+/* rivew expected */
+@import "components/reviewExpected.css";
+/* preview */
+@import "components/preveiw.css";
+/* photo */
+@import "components/photo.css";
+/* footer */
+@import "components/footer.css";
+/* log */
+@import "components/log.css";
+/* now */
+@import "components/nowPlay.css";
+/* sign up */
+@import "components/signUp.css";

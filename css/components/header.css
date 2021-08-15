@@ -1,0 +1,123 @@
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+header > .center {
+  margin: 0 auto;
+  width: 90%;
+  line-height: 50px;
+  height: 50px;
+}
+
+header > .center > .logo {
+  float: left;
+  margin-right: 30px;
+  /* background-color: blue; */
+  line-height: 50px;
+}
+.logo > span {
+  font-size: 18px;
+  margin-left: 3px;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+}
+
+nav {
+  float: left;
+}
+
+.headNav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.headNav > li:hover > a {
+  color: var(--green);
+}
+.headNav > li a {
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.gnb {
+  float: right;
+  padding-top: 10px;
+}
+.gnb > li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.gnb > li > a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: none;
+  text-indent: -9999px;
+}
+
+/* .gnb > li:first-child > a {
+  background: url(/images/iconmonstr-magnifier-2\ copy.png);
+}
+.gnb > li:first-child > a:hover {
+  background-position: -30px 0;
+} */
+
+.gnb > li:first-child > a {
+  background: url(../../images/iconmonstr-bell-1\ copy.png);
+}
+.gnb > li:first-child > a:hover {
+  background-position: -30px 0;
+}
+
+.gnb > li:last-child > a {
+  background: url(../../images/iconmonstr-user-20\ copy.png);
+}
+.gnb > li:last-child > a:hover {
+  background-position: -30px 0;
+}
+
+.searchWrap {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  width: 150px;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid var(--green);
+  color: white;
+  font-size: 18px;
+  opacity: 0;
+  position: absolute;
+  left: -180px;
+  transition: 0.4s;
+}
+
+.searchWrap > a {
+  margin-left: 20px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: none;
+  margin-top: 10px;
+  background: url(../../images/iconmonstr-magnifier-2\ copy.png);
+  position: relative;
+}
+
+.searchWrap > a:hover {
+  background-position: -30px 0;
+}
+
+.searchWrap:hover > a > #search {
+  opacity: 1;
+}
